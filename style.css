@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Varela-Round';
+    background: #262626;
+    display: flex;
+    height: 100vh;
+}
+
+.container-grid-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#header {
+    width: 150px;
+    background-color: #FFCE1F;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu a {
+    color: #262626;
+    font-size: 35px;
+}
