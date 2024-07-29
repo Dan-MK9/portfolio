@@ -398,3 +398,29 @@ mark {
     transform: scale(1.08);
     transition: .3s;
 }
+
+.botoes a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 200px;
+    height: 55px;
+    background-color: var(--cinza);
+    color: var(--marelo);
+
+    font-family: 'Varela Round';
+    font-size: 28px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 200ms ease;
+}
+
+#footer a:hover {
+    transform: scale(1.08);
+    transition: .3s;
+}
