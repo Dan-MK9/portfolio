@@ -1,3 +1,8 @@
+:root {
+    --marelo: #FFCE1F;
+    --cinza: #262626;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,35 +10,416 @@
 }
 
 body {
-    font-family:'Varela-Round';
-    background: #262626;
-    display: flex;
-    height: 100vh;
+    background-color: var(--cinza);
 }
 
-.container-grid-header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.container-grid {
+    width: 80vw;
+    height: 100%;
 }
 
 #header {
-    width: 150px;
-    background-color: #FFCE1F;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--marelo);
+}
+
+#header .container-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .icones-redes a:hover {
+    transform: scale(1.08);
+}
+
+.icones-redes a {
+    transition: .3s;
 }
 
 .menu {
+    width: 600px;
+
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
 }
 
 .menu a {
-    color: #262626;
-    font-size: 35px;
+    color: var(--cinza);
+    font-family: 'Varela Round';
+    font-size: 28px;
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 300ms ease;
 }
 
-.container-grid-header {
-    
+.menu a:hover {
+    text-decoration-color: var(--cinza);
+}
+
+.icones-redes {
+    width: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inicio .container-grid {
+    margin-left: 10%;
+}
+
+p {
+    color: white;
+    font-size: 28px;
+    font-family: 'Varela Round';
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Varela Round';
+}
+
+#p1 {
+    color: var(--marelo);
+
+    padding-right: 10%;
+}
+
+#p2 {
+    margin-top: 65px;
+
+    padding-right: 10%;
+}
+
+#inicio h2 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Varela Round';
+}
+
+#marelo {
+    color: var(--marelo);
+}
+
+mark {
+    background-color: #ff0000;
+    color: white;
+}
+
+#container-yellow {
+    height: 550px;
+    width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--marelo);
+}
+
+#pacman {
+    width: 150px;
+    height: 150px;
+}
+
+#cranio {
+    width: 150px;
+    height: 150px;
+}
+
+.botao-start {
+    color: var(--cinza);
+    background-color: var(--marelo);
+
+    width: 70%;
+    height: 75px;
+
+    border: none;
+
+    font-family: 'Varela Round';
+    font-size: 40px;
+}
+
+.botao-contato {
+    color: var(--marelo);
+    background-color: var(--cinza);
+
+    width: 28%;
+    height: 75px;
+
+    border: none;
+
+    font-family: 'Varela Round';
+    font-size: 40px;
+}
+
+#quem-sou {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 75px;
+}
+
+#quem-sou .container-grid {
+    margin-left: 10vw;
+}
+
+#quem-sou p {
+    margin-top: 10px;
+    padding-right: 10%;
+}
+
+#container-yellow2 {
+    height: 350px;
+    width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--marelo);
+}
+
+#game {
+    width: 150px;
+    height: 150px;
+}
+
+#experiencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 75px;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#experiencia .container-xp1 {
+    background-color: var(--marelo);
+
+    width: 50%;
+    height: 350px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-xp1 p {
+    color: var(--cinza);
+}
+
+#experiencia .container-xp2 {
+    margin-top: 10px;
+    background-color: var(--marelo);
+    width: 49%;
+    height: 350px;
+}
+
+
+.container-xp2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container-xp2 p {
+    color: var(--cinza);
+}
+
+#icones {
+    width: 30px;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#experiencia .container-xp4 {
+    background-color: var(--marelo);
+    width: 49%;
+    height: 350px;
+    margin-top: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-cards2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-xp4 p {
+    width: 75%;
+    color: var(--cinza);
+}
+
+#experiencia .container-xp3 {
+    background-color: var(--cinza);
+
+    width: 50%;
+    height: 350px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto {
+    width: 80vw;
+    margin-left: 10%;
+}
+
+#projetos p {
+    margin-top: 10px;
+}
+
+#link {
+    background-color: #1B0262;
+}
+
+#projetos .container-grid {
+    margin-left: 10%;
+}
+
+#celular {
+    width: 95px;
+    height: 150px;
+}
+
+#computador {
+    margin-right: 10%;
+    height: 300px;
+}
+
+#responsivo {
+    width: 150px;
+}
+
+#projetos .container-imagens {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 75px;
+}
+
+#container-yellow3 {
+    height: 350px;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--marelo);
+}
+
+#footer {
+    height: 30vw;
+    background-color: var(--marelo);
+}
+
+#footer .container-grid {
+    margin-left: 10vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer h2 {
+    color: var(--cinza);
+}
+
+#footer p {
+    color: var(--cinza);
+}
+
+#footer .container-texto {
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#footer .botoes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Linkedin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 200px;
+    height: 55px;
+    background-color: var(--cinza);
+    color: var(--marelo);
+
+    font-family: 'Varela Round';
+    font-size: 28px;
+}
+
+#Github {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 200px;
+    height: 55px;
+    background-color: var(--cinza);
+    color: var(--marelo);
+
+    font-family: 'Varela Round';
+    font-size: 28px;
+}
+
+#Outlook {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 200px;
+    height: 55px;
+    background-color: var(--cinza);
+    color: var(--marelo);
+
+    font-family: 'Varela Round';
+    font-size: 28px;
 }

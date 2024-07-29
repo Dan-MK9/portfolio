@@ -1,30 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danilo Santos Lima</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <title>Danilo Santos Lima</title>
 </head>
 
 <body>
-    <div class="container-grid-header">
-        <header id="header">
-            <nav id="menu" class="menu"> 
-                <a href="Danilo"></a>
-                <a href="Projetos"></a>
-                <a href="Habilidades"></a>
-                <a href="Contatos"></a>
+    <header id="header">
+        <div class="container-grid">
+            <nav id="menu" class="menu">
+                <a href="#quem-sou" id="apresentacao">Quem sou?</a>
+                <a href="#experiencia" id="habilidades">Habilidades</a>
+                <a href="#projetos" id="projetos">Projetos</a>
+                <a href="#footer" id="contato">Contatos</a>
             </nav>
-        </header>
+            <div class="icones-redes">
+                <a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_135_2)">
+                            <path
+                                d="M19 0C8.50547 0 0 8.50547 0 19C0 29.4945 8.50547 38 19 38C29.4945 38 38 29.4945 38 19C38 8.50547 29.4945 0 19 0ZM13.6859 26.9488H9.98242V15.0961H13.6859V26.9488ZM11.734 13.6117H11.7043C10.3609 13.6117 9.49258 12.7063 9.49258 11.5559C9.49258 10.3832 10.3906 9.5 11.7562 9.5C13.1219 9.5 13.9605 10.3832 13.9902 11.5559C13.9977 12.6988 13.1293 13.6117 11.734 13.6117ZM28.5 26.9488H24.2992V20.8184C24.2992 19.2152 23.6461 18.1168 22.1988 18.1168C21.093 18.1168 20.477 18.859 20.1949 19.5715C20.091 19.8238 20.1059 20.1801 20.1059 20.5437V26.9488H15.9422C15.9422 26.9488 15.9941 16.0832 15.9422 15.0961H20.1059V16.959C20.3508 16.1426 21.6793 14.9848 23.802 14.9848C26.4367 14.9848 28.5 16.6918 28.5 20.3582V26.9488Z"
+                                fill="#262626" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_135_2">
+                                <rect width="38" height="38" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.998 0C8.50638 0 0 8.72155 0 19.4818C0 28.0883 5.44348 35.3896 12.994 37.9666C13.9443 38.1449 14.2906 37.5434 14.2906 37.0263C14.2906 36.565 14.2748 35.3394 14.2653 33.714C8.97996 34.8911 7.86518 31.1022 7.86518 31.1022C7.00102 28.8527 5.75499 28.2536 5.75499 28.2536C4.02984 27.0442 5.88544 27.0685 5.88544 27.0685C7.79244 27.2071 8.79575 29.0764 8.79575 29.0764C10.4909 32.0531 13.243 31.193 14.3254 30.6953C14.4986 29.4364 14.988 28.5779 15.5319 28.0907C11.3131 27.5995 6.87689 25.9271 6.87689 18.4629C6.87689 16.3366 7.61771 14.597 8.83291 13.2351C8.63762 12.7423 7.98535 10.7619 9.0187 8.07953C9.0187 8.07953 10.6142 7.55587 14.244 10.0769C15.7596 9.64486 17.3851 9.42842 19.0004 9.42112C20.6141 9.42842 22.2396 9.64486 23.7576 10.0769C27.385 7.55587 28.9773 8.07953 28.9773 8.07953C30.0139 10.7619 29.3616 12.7423 29.1663 13.2351C30.3839 14.597 31.1199 16.3366 31.1199 18.4629C31.1199 25.9466 26.6766 27.593 22.4436 28.0753C23.1267 28.6768 23.7339 29.8652 23.7339 31.6834C23.7339 34.2872 23.711 36.3883 23.711 37.0263C23.711 37.5483 24.0525 38.1547 25.0171 37.9642C32.5613 35.3823 38 28.0858 38 19.4818C38 8.72155 29.4928 0 18.998 0Z"
+                            fill="#262626" />
+                    </svg>
+                </a>
+                <a href=""><svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_135_54)">
+                            <path
+                                d="M19 0C8.50655 0 0 8.50655 0 19C0 29.4935 8.50655 38 19 38C29.4935 38 38 29.4935 38 19C38 8.50655 29.4935 0 19 0ZM21.7562 12.8426H29.0211C29.0837 12.8426 29.0459 12.8382 29.1061 12.8477L21.7562 19.0806V12.8426ZM20.3488 28.4212C20.3488 29.0577 19.7975 29.5311 19.1758 29.3948L8.65204 27.0894C8.19463 26.9891 7.85791 26.584 7.85791 26.1159V11.3787C7.85791 10.8932 8.23034 10.4781 8.70904 10.3963L19.2043 8.59627C19.8131 8.49194 20.3486 8.96096 20.3486 9.57864L20.3488 28.4212ZM30.0248 14.6983V24.159C30.0248 24.8071 29.6692 25.1576 29.0211 25.1576H21.7562V21.3092C21.7562 21.2958 29.9699 14.2104 29.9699 14.2104C30.0379 14.3589 30.0248 14.5239 30.0248 14.6983ZM15.751 14.7044C14.437 14.018 12.9101 14.2162 11.7605 15.1046C10.6535 15.9596 9.96374 17.5004 9.96374 19.0002C9.96374 20.4999 10.6535 22.0407 11.7605 22.8957C12.2703 23.2896 12.8505 23.5466 13.4545 23.6524C14.2171 23.7859 15.0191 23.678 15.751 23.2958C17.1482 22.5662 18.0124 20.9793 18.0124 19.0002C18.0124 17.0208 17.1482 15.4343 15.751 14.7044ZM14.6814 21.2751C14.0118 21.7154 13.0979 21.6969 12.4091 21.2526C11.6579 20.7677 11.2754 19.756 11.2754 19.0004C11.2754 18.2447 11.6579 17.233 12.4091 16.7481C12.724 16.5451 13.0852 16.4313 13.4488 16.4093C13.8816 16.3831 14.3184 16.4867 14.6815 16.7253C15.3161 17.1422 15.6451 17.9107 15.6451 19.0004C15.6449 20.0897 15.3161 20.8581 14.6814 21.2751Z"
+                                fill="#262626" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_135_54">
+                                <rect width="38" height="38" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
 
-    </div>
+    <section id="inicio">
+        <div class="container-grid">
+            <p id="p1">Olá! Eu sou o</p>
+            <h2>Danilo Santos Lima</h2>
+            <p id="p1">um programador web em fase de evolução e estudante de Programação de Jogos Digitais.</p>
+            <p id="p2">É um prazer tê-lo aqui!
+                Pressione <span id="marelo">START</span> e venha conhecer meus projetos, onde cada linha de código é um
+                <span id="marelo">XP</span> ganho e cada projeto desenvolvido é um <span id="marelo">boss</span>
+                derrotado <span id="marelo">.</span>
+            </p>
+        </div>
+        <div id="container-yellow">
+            <img id="pacman" src="img/pacman 1.svg" alt="Pacman">
+            <img id="cranio" src="img/tools-and-utensils-user 1.svg" alt="Cranio">
+        </div>
+    </section>
+    <button class="botao-start">START</button>
+    <button class="botao-contato">Contate-me</button>
+
+    <section id="quem-sou">
+        <div class="container-grid">
+            <h2>Quem sou <span id="marelo">?</span></h2>
+            <p>My name is Danilo, tenho 19 anos, sou estudante e atualmente estou cursando o curso de <span
+                    id="marelo">Programação de Jogos Digitais</span> atráves da instituição de ensino
+                <mark>SENAI</mark>/SP <span id="marelo">.</span>
+            </p>
+        </div>
+        <div id="container-yellow2">
+            <img id="game" src="img/Group.svg" alt="Game">
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="container-grid">
+            <h2>My Expertise <span id="marelo">:</span></h2>
+            <div class="container-cards">
+                <div class="container-xp1">
+                    <p> &lt;h3&gt; <br> Desenvolvimento Web. <br>
+                        Web design. <br>
+                        UI - UX. <br>
+                        Sites responsivos. <br> &lt;h3&gt; </p>
+                </div>
+                <div class="container-xp2">
+                    <p>Skills : <br>
+                        HTML5 <br>
+                        CSS <br>
+                        JAVASCRIPT <br>
+                        TYPESCRIPT <br>
+                        NODE.JS <br>
+                        FIGMA</p>
+                    <div id="icones">
+                        <img src="img/html5-02 1.svg" alt="HTML">
+                        <img src="img/css3 1.svg" alt="CSS">
+                        <img src="img/javascript 1.svg" alt="JS">
+                        <img src="img/typescript 1.svg" alt="TS">
+                        <img src="img/node-js 1.svg" alt="NJS">
+                        <img src="img/figma 1.svg" alt="FIGMA">
+                    </div>
+                </div>
+            </div>
+            <div class="container-cards2">
+                <div class="container-xp3"></div>
+                <div class="container-xp4">
+                    <p>Desenvolvimento de games através de engines. <br>
+                        Implementação de física e mecânicas. <br>
+                        Design de níveis e ambientes. <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div id="texto">
+            <h2>Projetos <span id="marelo">:</span></h2>
+            <p><span id="marelo">GamifyCo</span> é uma empresa especializada em <span id="marelo">gamificação</span>
+                corporativa, dedicada a atender as necessidades de empresários e colaboradores por meio de soluções
+                inovadoras em capacitação, engajamento e treinamento. <a
+                    href="https://dan-mk9.github.io/gamifyco/"><mark id="link">Acesse o site da empresa aqui!</mark></a>
+            </p>
+        </div>
+        <div class="container-imagens">
+            <img id="celular" src="img/smartphone.svg" alt="smartphone">
+            <img id="computador" src="img/monitor 1.svg" alt="computador">
+            <div id="container-yellow3">
+                <img id="responsivo" src="img/tablet-smartphone-computer-checked 1.svg" alt="responsivo">
+            </div>
+        </div>
+        <div class="container-grid">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container-grid">
+            <div class="container-texto">
+                <h2>Pronto para subir de nível?</h2>
+                <p>Entre em contato e desbloqueie novas possibilidades!</p>
+            </div>
+            <div class="botoes">
+                <button id="Linkedin"><img src="img/linkedin-round 1.svg" alt="Linkedin">Linkedin</button>
+                <button id="Github"><img src="img/github.svg" alt="Github">Github</button>
+                <button id="Outlook"><img src="img/outlook 3.svg" alt="Outlook">Outlook</button>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 </html>
