@@ -373,7 +373,7 @@ mark {
     justify-content: space-evenly;
 }
 
-#Linkedin {
+#footer button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -388,38 +388,13 @@ mark {
 
     font-family: 'Varela Round';
     font-size: 28px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 200ms ease;
 }
 
-#Github {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: none;
-    border-radius: 10px;
-
-    width: 200px;
-    height: 55px;
-    background-color: var(--cinza);
-    color: var(--marelo);
-
-    font-family: 'Varela Round';
-    font-size: 28px;
-}
-
-#Outlook {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: none;
-    border-radius: 10px;
-
-    width: 200px;
-    height: 55px;
-    background-color: var(--cinza);
-    color: var(--marelo);
-
-    font-family: 'Varela Round';
-    font-size: 28px;
+#footer button:hover {
+    transform: scale(1.08);
+    transition: .3s;
 }
