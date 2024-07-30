@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth ;
+}
+
 body {
     background-color: var(--cinza);
 }
@@ -142,14 +146,6 @@ mark {
 .container-botoes {
     display: flex;
     align-items: center;
-}
-
-#botoes-inicio a:hover{
-    width: 100%;
-    height: 75px;
-
-    transition: .4s;
-    transform: scale(0.5);
 }
 
 #botao-start {
@@ -550,6 +546,9 @@ mark {
     p {
         font-size: 20px;
     }
+    nav.menu {
+        width: 100%;
+    }
     #pacman {
         height: 120px;
     }
@@ -570,9 +569,6 @@ mark {
 }
 
 @media screen and (max-width: 500px) {
-    nav.menu {
-        width: 100%;
-    }
     #experiencia {
         margin-bottom: 50px;
     }
