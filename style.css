@@ -16,6 +16,7 @@ body {
 .container-grid {
     width: 80vw;
     height: 100%;
+    margin: 0 auto;
 }
 
 #header {
@@ -27,6 +28,10 @@ body {
     background-color: var(--marelo);
 }
 
+header button{
+    display: none;
+}
+
 #header .container-grid {
     display: flex;
     justify-content: space-between;
@@ -36,12 +41,12 @@ body {
     transform: scale(1.08);
 }
 
-.icones-redes a {
+#header .icones-redes a {
     transition: .3s;
 }
 
 .menu {
-    width: 600px;
+    width: 80vw;
 
     display: flex;
     justify-content: space-between;
@@ -103,12 +108,6 @@ h2 {
     padding-right: 10%;
 }
 
-#inicio h2 {
-    color: white;
-    font-size: 35px;
-    font-family: 'Varela Round';
-}
-
 #marelo {
     color: var(--marelo);
 }
@@ -140,30 +139,51 @@ mark {
     height: 150px;
 }
 
-.botao-start {
-    color: var(--cinza);
-    background-color: var(--marelo);
+.container-botoes {
+    display: flex;
+    align-items: center;
+}
 
+#botoes-inicio a:hover{
+    width: 100%;
+    height: 75px;
+
+    transition: .4s;
+    transform: scale(0.5);
+}
+
+#botao-start {
     width: 70%;
     height: 75px;
 
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--cinza);
+    background-color: var(--marelo);
 
     font-family: 'Varela Round';
     font-size: 40px;
+    text-decoration: underline transparent;
+    text-transform: uppercase;
 }
 
-.botao-contato {
+#botao-contato {
+    width: 30%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: var(--marelo);
     background-color: var(--cinza);
 
-    width: 28%;
-    height: 75px;
-
-    border: none;
-
     font-family: 'Varela Round';
     font-size: 40px;
+    text-decoration: underline transparent;
+    text-transform: uppercase;
 }
 
 #quem-sou {
@@ -373,32 +393,6 @@ mark {
     justify-content: space-evenly;
 }
 
-#footer button {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    border: none;
-    border-radius: 10px;
-
-    width: 200px;
-    height: 55px;
-    background-color: var(--cinza);
-    color: var(--marelo);
-
-    font-family: 'Varela Round';
-    font-size: 28px;
-
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: background-color 200ms ease;
-}
-
-#footer button:hover {
-    transform: scale(1.08);
-    transition: .3s;
-}
-
 .botoes a {
     display: flex;
     justify-content: space-evenly;
@@ -414,6 +408,7 @@ mark {
 
     font-family: 'Varela Round';
     font-size: 28px;
+    text-decoration: underline transparent;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -423,4 +418,273 @@ mark {
 #footer a:hover {
     transform: scale(1.08);
     transition: .3s;
+}
+
+@media screen and (max-width: 900px) {
+    #menu a{
+        font-size: 22px;
+    }
+    #botao-contato {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 23px;
+    }
+    .icones-redes {
+        width: 120px;
+    }
+    .icones-redes svg{
+        width: 35px;
+        height: 35px;
+    }
+    .botoes a{
+        width: 180px;
+        height: 50px;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .icones-redes svg {
+        width: 30px;
+        height: 30px;
+    }
+    .icones-redes {
+        width: 100px;
+    }
+    #menu a{
+        font-size: 19px;
+    }
+    #footer .botoes {
+        justify-content: space-between;
+    }
+    .botoes a {
+        width: 155px;
+        height: 47px;
+    }
+    #computador {
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #header .container-grid {
+        justify-content: flex-end;
+    }
+    header {
+        height: 500px;
+        flex-direction: column;
+        position: relative;
+    }
+    header svg {
+        fill: var(--cinza);
+    }
+    #icone-x {
+        display: none;
+    }
+    header button {
+        width: 40px;
+        display: unset;
+        background: none;
+        border: none;
+    }
+    .menu {
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu a {
+        font-size: 27px;
+    }
+    .icones-redes {
+        width: 170px;
+    }
+    .icones-redes svg {
+        width: 40px;
+        height: 40px;
+    }
+    nav.menu {
+        width: 350px;
+        height: 500px;
+        top: 75px;
+        background-color: var(--marelo);
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+
+
+        display: none;
+
+
+    }
+    #icone-barras {
+        display: inline;
+    }
+    #botao-start {
+        font-size: 35px;
+    }
+    #botao-contato {
+        font-size: 21px;
+    }
+    #computador {
+        height: 260px;
+    }
+    #celular {
+        width: 70px;
+        height: 110px;
+    }
+    #footer {
+        height: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 27px;
+    }
+    p {
+        font-size: 20px;
+    }
+    #pacman {
+        height: 120px;
+    }
+    #cranio {
+        height: 120px;
+    }
+    #game {
+        height: 120px;
+    }
+    #responsivo {
+        height: 120px;
+    }
+    .botoes a{
+        width: 130px;
+        height: 45px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #experiencia {
+        margin-bottom: 50px;
+    }
+    .container-cards {
+        flex-direction: column;
+    }
+    #experiencia .container-xp1 {
+        width: 100%;
+        height: 300px;
+    }
+    #experiencia .container-xp2 {
+        width: 100%;
+        margin-top: 3px;
+        height: 300px;
+    }
+    #experiencia .container-xp3 {
+        height: 0%;
+        margin-top: 1px;
+    }
+    #experiencia .container-xp4 {
+        width: 100%;
+        height: 300px;
+    }
+    .container-cards2 {
+        flex-direction: column;
+    }
+    #container-yellow {
+        display: none;
+    }
+    #inicio .container-grid {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #botao-start {
+        width: 100%;
+    }
+    #botao-contato {
+        display: none;
+    }
+    #quem-sou {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    #quem-sou .container-grid {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    #container-yellow2 {
+        height: 75px;
+        width: 100%;
+    }
+    #game {
+        height: 55px;
+    }
+    #projetos .container-imagens {
+        flex-direction: column-reverse;
+    }
+    #container-yellow3 {
+        height: 75px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #responsivo {
+        height: 55px;
+    }
+    #projetos .container-imagens {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .botoes a {
+        width: 120px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #footer {
+        height: 70vw;
+    }
+    .botoes a {
+        width: 100px;
+        font-size: 12px;
+    }
+    #footer img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 24px
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .botoes a {
+        width: 88px;
+        height: 34px;
+        font-size: 10px;
+    }
+    #footer {
+        height: 80vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .botoes a {
+        width: 80px;
+        height: 34px;
+    }
+    #footer {
+        height: 90vw;
+    }
 }
